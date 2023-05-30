@@ -137,7 +137,7 @@ void inserir(char *titulo, char *autor, int num_paginas)
     if (buscar(titulo) == -1) //se o titulo escolhido não está gravado no arquivo
     {
         FILE *arquivo;
-        arquivo = fopen("livros.txt", "a"); //abri um arquivo para acrescentar algo no final
+        arquivo = fopen("livros.txt", "a"); //abre um arquivo para acrescentar algo no final
       
         //pega o input do usuario        
         fprintf(arquivo, "%s - ", titulo);
